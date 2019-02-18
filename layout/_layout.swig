@@ -119,5 +119,14 @@
   {% include '_third-party/exturl.swig' %}
   {% include '_third-party/bookmark.swig' %}
   {% include '_third-party/copy-code.swig' %}
+  {% include '_third-party/pdf.swig' %}
+  {% if theme.mermaid.enable %}
+    <script src='https://unpkg.com/mermaid@{{ theme.mermaid.version }}/dist/mermaid.min.js'></script>
+    <script>
+      if (window.mermaid) {
+        mermaid.initialize({{ JSON.stringify(theme.mermaid.options) }});
+       }
+    </script>
+  {% endif %}
 </body>
 </html>
