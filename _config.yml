@@ -112,12 +112,6 @@ creative_commons:
   post: false
   language:
 
-# Follow me on GitHub banner in right-top corner.
-github_banner:
-  enable: false
-  permalink: https://github.com/yourname
-  title: Follow me on GitHub
-
 
 # ---------------------------------------------------------------
 # SEO Settings
